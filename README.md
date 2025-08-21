@@ -44,7 +44,7 @@ The application follows **Hexagonal Architecture** (also known as Ports & Adapte
     * `FlightsService` is the main service implementing `FlightsServiceUseCase`
 
 * **Adapter**
-    * The most extensive part - bridges between the application and external systems (suppliers) or users (API clients).
+    * The most extensive part of the app - bridges between the application and external systems (suppliers) or users (API clients).
     * **Inbound adapters**: Connect to external flight suppliers (`CrazyAir` and `ToughJet`). Possible future extension for additional suppliers.
     * **Outbound adapters**: Provide the REST API interface. Includes:
         * `FlightsController` – handles HTTP requests
